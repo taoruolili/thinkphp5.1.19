@@ -1,11 +1,11 @@
 <?php
 
-namespace app\admin\controller;
+namespace app\home\controller;
 
 use think\Controller;
 use think\Request;
 
-class LoginController extends Controller
+class IndexController extends Controller
 {
     /**
      * 显示资源列表
@@ -14,8 +14,8 @@ class LoginController extends Controller
      */
     public function index()
     {
-        //
-        echo '登录页';
+        //显示前台首页
+        return view('index/index');
     }
 
     /**

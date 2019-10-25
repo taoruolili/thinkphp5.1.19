@@ -9,12 +9,18 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-Route::get('think', function () {
-    return 'hello,ThinkPHP5!';
-});
+// Route::get('think', function () {
+//     return 'hello,ThinkPHP5!';
+// });
 
-Route::get('hello/:name', 'index/hello');
+// Route::get('hello/:name', 'index/hello');
 
-return [
+// return [
 
-];
+// ];
+//显示后台登录页
+Route::rule('login','admin/LoginController/index');
+
+//前台
+Route::rule('/','home/IndexController/index');
+
